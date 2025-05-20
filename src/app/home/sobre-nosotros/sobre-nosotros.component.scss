@@ -1,0 +1,37 @@
+/*EMPIEZA SOBRE NOSOTROS*/
+.SobreNosotros {
+  display: flex;
+  align-items: top; 
+  gap: 20px; 
+  margin-top: 150px;
+}
+
+.ImagenSobreNosotros {
+  width: 709px; 
+  height: 762px;
+}
+
+.SobreNosotrosTexto {
+  text-align: left;
+}
+
+.SobreNosotrosTexto h2 {
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.p1 {
+  margin-top: 40px;
+  font-size: 20px;
+  margin: 0;
+  margin-right: 100px;
+}
+
+.p2 {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 50px;
+  margin-right: 100px;
+}
