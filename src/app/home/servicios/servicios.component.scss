@@ -1,0 +1,167 @@
+/*Empieza Nuestros Servicios*/
+.NuestrosServicios{
+  margin-top: 200px;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+/*Cuadritos*/
+.CuadrosArriba{
+   display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+/*EMPIEZA CUADRO DE TIPOS DE SERVICIO*/
+.CuadroTiposDeServicio, 
+.CuadroHospitalesDisponibles,
+.CuadroCalendario {
+ width: 401px;
+  height: 388px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5);
+  /* Elimina cualquier margen lateral aquí */
+}
+.ImagenCuadrito1{
+    width: 401px;      
+  height: 208px; 
+  margin-bottom: 0px;
+}
+.AgruparItems {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.IconoCuadritos {
+  width: 37px; 
+  height: 37px;
+  margin-left: 24px;
+}
+
+.CuadroTiposDeServicio h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.CuadroTiposDeServicio p {
+  margin: 5px 24px 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*TERMINA CUADRO DE TIPOS DE SERVICIO*/
+/*EMPIEZA CUADRO DE HOSPITALES DISPONIBLES*/
+.CuadroHospitalesDisponibles h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.CuadroHospitalesDisponibles p {
+  margin: 5px 24px 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*TERMINA HOSPITALES DISPONIBLES*/
+.CuadroCalendario h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.CuadroCalendario p {
+  margin: 5px 24px 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*TERMINA CALENDARIO*/
+/*TERMINA CUADRITOS DE ARRIBA*/
+/*EMPIEZA CUADRITOS DE ABAJO*/
+/*Cuadritos*/
+.CuadritosAbajo{
+   display: flex;
+  justify-content: center;
+  gap: 20px; 
+  margin-top: 40px;
+}
+/*EMPIEZA CONSULTAS COMUNES*/
+.CuadritoConsultasComunes,
+.CuadritoHistorialMedico,
+.CuadritoPedirConsultaTutorial {
+ width: 401px;
+  height: 447px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.3);
+}
+.CuadritoConsultasComunes h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.CuadritoConsultasComunes p {
+  margin: 5px 24px 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ImagenCuadrito2{
+    width: 401px;     
+  height: 208px; 
+  margin-bottom: 0px;
+}
+.botonConsultasComunes {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 2px solid #15616D; 
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 15px; 
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+/*TERMINA CONSULTAS COMUNESSSS*/
+/*EMPIEZA HISTORIAL MEDICO*/
+.CuadritoHistorialMedico h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.CuadritoHistorialMedico p {
+  margin: 5px 24px 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*TERMINA HISTORIAL MEDICO*/
+/*EMPIEZA PEDIR CONSULTA TUTORIAL*/
+.CuadritoPedirConsultaTutorial h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.CuadritoPedirConsultaTutorial p {
+  margin: 5px 24px 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ImagenCuadrito2{
+    width: 401px;    
+  height: 208px; 
+  margin-bottom: 0px;
+}
+.botonPedirConsultaTutorial {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 2px solid #15616D; 
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 15px; 
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+/* <!--TERMINA PEDIR CONSULTA TUTORIAL-->
+ <!--TERMINA CUADRITOS DE ABAJO-->
+        <!--TERMINA CUADRITOS-->*/

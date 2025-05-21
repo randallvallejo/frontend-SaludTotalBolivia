@@ -1,0 +1,90 @@
+/*Empieza la barra de navegacion*/
+header {
+    background-color: #15616D;
+    padding: 0 40px;     
+    color: white;
+  }
+  
+  /* Contenedor interno para logo y navegación */
+  .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;          
+  }
+  .grupo-izquierdo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo del logo */
+  .logo {
+    width: 90px;           
+    height: auto;
+    margin-left: -40px;
+    margin-right: 30px;
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  .barra-navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;      
+    font-size: 15px;        
+    font-weight: bold;     
+}
+  .barra-navegacion{
+    .active{
+      color: #B7B7F1;
+    }
+  }
+  .barra-navegacion a:hover {
+    text-decoration: underline;
+  }
+ body {
+  font-family: 'Nunito', sans-serif;
+}
+
+  .boton-perfil {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .icono-perfil {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .boton-notificacion {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  }
+  .Icono-notificacion {
+     width: 24px;
+    height: 24px;
+  }
+  .grupo-derecho {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+.boton-Iniciar-Sesion{
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px; 
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #B7B7F1;
+  }
+}
+/*Termina la barra de navegacion*/
