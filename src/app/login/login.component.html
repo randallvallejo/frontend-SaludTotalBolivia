@@ -1,11 +1,10 @@
-
 <div class="login-container">
   <div class="image-section">
       <img src="Img/imagenLogin.png" alt="Lobby" />
   </div>
 
   <div class="form-section">
-    <h1>WELCOME</h1>
+    <h1>Login</h1>
 
 
     <form>
@@ -21,7 +20,7 @@
 
       <button class="btn-login">Iniciar sesión</button>
       <div class="divider">o</div>
-      <button class="btn-register">Crear cuenta</button>
+      <button [routerLink]="['/register']" class="btn-register">Crear cuenta</button>
     </form>
 
     <div class="social-icons">

@@ -3,18 +3,18 @@
       <div class="grupo-izquierdo">
         <img src="Img/logo.svg" class="logo">
         <nav class="barra-navegacion">
-          <a href="#">Inicio</a>
-          <a href="#">Reservar</a>
-          <a href="#">Consultas</a>
-          <a href="#">Sobre nosotros</a>
-          <a href="#">Buscar</a>
+          <a [routerLink]="['/home']" [routerLinkActive]="['active','selected']" (click)="setTitle('Home')">Inicio</a>
+          <a [routerLink]="['/reserv']" href="#"[routerLinkActive]="['active']"(click)="setTitle('Reserve')">Reservar</a>
+          <a [routerLink]="['/consultas']" href="#"[routerLinkActive]="['active']"(click)="setTitle('Consultas')">Consultas</a>
+          <a [routerLink]="['/about-us']" href="#"[routerLinkActive]="['active']"(click)="setTitle('About us')">Sobre nosotros</a>
+          <a [routerLink]="['/search']" href="#"[routerLinkActive]="['active']"(click)="setTitle('Search')">Buscar</a>
         </nav>
       </div>
 
       <!-- Botones del lado derecho -->
       <div class="grupo-derecho">
-        <button class="boton-Iniciar-Sesion">
-        Iniciar sesion
+        <button  class="boton-Iniciar-Sesion" [routerLink]="['/login']" (click)="setTitle('Login')">
+          Iniciar sesion
         </button>
         <button class="boton-perfil">
           <img src="Icons/IconoPerfil.svg" class="IconoHeader">
