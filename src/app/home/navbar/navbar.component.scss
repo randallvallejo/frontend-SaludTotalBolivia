@@ -32,8 +32,12 @@ header {
     margin-left: 30px;      
     font-size: 15px;        
     font-weight: bold;     
-  
 }
+  .barra-navegacion{
+    .active{
+      color: #B7B7F1;
+    }
+  }
   .barra-navegacion a:hover {
     text-decoration: underline;
   }
@@ -78,6 +82,9 @@ header {
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #B7B7F1;
+  }
 }
 /*Termina la barra de navegacion*/
