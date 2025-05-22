@@ -6,11 +6,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { Title } from '@angular/platform-browser';
 
-import { ConsultasComponent } from './consultas/consultas.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,ConsultasComponent],
+  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
