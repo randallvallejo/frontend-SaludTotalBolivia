@@ -1,3 +1,4 @@
+<!-- register2.component.html -->
 <div class="registro2-page">
   <div class="imagen-panel">
     <img src="Img/ImagenRegis.png" alt="Fondo registro" />
@@ -61,7 +62,7 @@
         </div>
       </div>
 
-      <!-- Nuevo: Dirección -->
+      <!-- Dirección -->
       <div class="field-group">
         <label for="address">Dirección</label>
         <input
@@ -92,15 +93,24 @@
       <!-- Subir foto -->
       <div class="field-group">
         <label for="photo">Subir foto</label>
-        <input id="photo" type="file" (change)="onFileSelected($event)" />
+        <input
+          id="photo"
+          type="file"
+          (change)="onFileSelected($event)"
+        />
       </div>
 
-      <!-- Botón -->
-      <button type="submit" [disabled]="registerForm.invalid">
+      <!-- Botón Siguiente -->
+      <button
+        type="submit"
+        [disabled]="registerForm.invalid || isLoading"
+        [routerLink]="registerForm.valid ? ['/register3'] : null"
+      >
         <span *ngIf="!isLoading">Siguiente</span>
       </button>
     </form>
 
+    <!-- Paginación -->
     <div class="paginacion">
       <span></span>
       <span class="activo"></span>

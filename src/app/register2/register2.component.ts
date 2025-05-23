@@ -6,13 +6,13 @@ import {
   FormGroup,
   Validators
 }                                 from '@angular/forms';
-
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-register2',
   standalone: true,
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule, RouterLink
   ],
   templateUrl: './register2.component.html',
   styleUrls:   ['./register2.component.scss']
