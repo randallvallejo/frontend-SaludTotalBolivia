@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ConsultasComponent } from './consultas/consultas.component';
 import { NotificacionesComponent } from './notificaciones/notificaciones.component';
+import { CancelacionComponent } from './cancelacion/cancelacion.component';
 
 export const routes: Routes = [
     {path: 'home',component:HomeComponent },
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path: 'login',component:LoginComponent },
     {path: 'register',component:RegisterComponent },
     {path: '',redirectTo:'home',pathMatch:'full'},
-    {path: 'notificaciones',component:NotificacionesComponent}
+    {path: 'notificaciones',component:NotificacionesComponent},
+    {path: 'cancelacion',component:CancelacionComponent},
 ];

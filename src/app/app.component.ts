@@ -6,11 +6,12 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotificacionesComponent } from './notificaciones/notificaciones.component';
 import { Title } from '@angular/platform-browser';
+import { CancelacionComponent } from './cancelacion/cancelacion.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,NotificacionesComponent],
+  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,NotificacionesComponent, CancelacionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,15 @@
+<app-cuadrito-detalles></app-cuadrito-detalles>
+
+<div class="contenedor-cancelacion">
+  <form (ngSubmit)="onSubmit()">
+  <label for="motivo"><h3>Motivos de cancelación:</h3></label>
+  <textarea id="motivo" name="motivo" placeholder="Escriba su motivo aquí..." required></textarea>
+
+  <p class="advertencia">
+    Le recordamos que solo tiene 3 cancelaciones disponibles...
+  </p>
+
+  <button class="btn-cancelar" type="submit">Cancelar</button>
+</form>
+
+</div>
