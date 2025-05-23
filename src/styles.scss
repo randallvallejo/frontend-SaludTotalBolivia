@@ -7,10 +7,57 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-* {
-  font-family: 'Nunito', sans-serif;
+:root{
+  --clr-prymary-light: #ffffff;
+  --clr-primary-a0:   #F1B8EA;
+  --clr-primary-a10: #E4A8DC;
+  --clr-primary-a20: #B7B7F1;
+  --clr-primary-a30: #D797CF;
+  --clr-primary-a40: #BC77B3;
+  --clr-primary-a50: #A25698;
+  --clr-primary-a60: #87367C;
+  --clr-primary-a70: #6D1561;
+  --clr-primary-a80: #57113E;
+  --clr-primary-a90: #410D3A;
+  --clr-primary-a100: #2C0827;
+  --clr-primary-a110: #21061D;
+  --clr-primary-a120: #160413;
+  --clr-primary-a130: #0B020A;
+  --clr-primary-a140: #000000;
+
+
+  --clr-secundary-a0:  #EAF1B8;
+  --clr-secundary-a10: #DCE4A8;
+  --clr-secundary-a20: #CFD797;
+  --clr-secundary-a30: #C1C987;
+  --clr-secundary-a40: #B3BC77;
+  --clr-secundary-a50: #98A256;
+  --clr-secundary-a60: #7C8736;
+  --clr-secundary-a70: #616D15;
+  --clr-secundary-a80: #4E5711;
+  --clr-secundary-a90: #3A410D;
+  --clr-secundary-a100: #272C08;
+  --clr-secundary-a110: #1D2106;
+  --clr-secundary-a120: #131604;
+  --clr-secundary-a130: #0A0B02;
+
+  --clr-third-a0:  #B8EAF1;
+  --clr-third-a10: #A8DCE4;
+  --clr-third-a20: #97CFD7;
+  --clr-third-a30: #87C1C9;
+  --clr-third-a40: #77B3BC;
+  --clr-third-a50: #5698A2;
+  --clr-third-a60: #367C87;
+  --clr-third-a70: #15616D;
+  --clr-third-a80: #114E57;
+  --clr-third-a90: #0D3A41;
+  --clr-third-a100: #08272C;
+  --clr-third-a110: #061D21;
+  --clr-third-a120: #041316;
+  --clr-third-a130: #020A0B;
 }
 
 * {
   font-family: 'Nunito', sans-serif;
+ 
 }

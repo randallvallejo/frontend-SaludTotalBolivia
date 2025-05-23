@@ -1,8 +1,8 @@
 /*Empieza la barra de navegacion*/
 header {
-    background-color: #15616D;
+    background-color: var(--clr-third-a70);
     padding: 0 40px;     
-    color: white;
+    color: var(--clr-prymary-light);
   }
   
   /* Contenedor interno para logo y navegación */
@@ -27,7 +27,7 @@ header {
   
   /* Estilo para los enlaces de navegación */
   .barra-navegacion a {
-    color: white;
+    color: var(--clr-prymary-light);
     text-decoration: none;
     margin-left: 30px;      
     font-size: 15px;        
@@ -35,7 +35,7 @@ header {
 }
   .barra-navegacion{
     .active{
-      color: #B7B7F1;
+      color: var(--clr-primary-a20);
     }
   }
   .barra-navegacion a:hover {
@@ -73,8 +73,8 @@ header {
   gap: 10px; 
 }
 .boton-Iniciar-Sesion{
-  background-color: white;
-  color: black;
+  background-color: var(--clr-prymary-light);
+  color: var(--clr-primary-a140);
   border: none;
   padding: 12px 30px;
   font-size: 16px;
@@ -84,7 +84,7 @@ header {
   font-weight: 500;
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #B7B7F1;
+    background-color: var(--clr-primary-a20);
   }
 }
 /*Termina la barra de navegacion*/

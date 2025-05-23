@@ -24,7 +24,7 @@
 
 .form-section {
   flex: 1;
-  background-color: #ffffff;
+  background-color: var(--clr-prymary-light);
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ input {
 }
 
 .btn-login {
-  background-color: #b2e4ea;
+  background-color: var(--clr-third-a0);
   border: none;
   padding: 12px;
   border-radius: 20px;
@@ -77,7 +77,7 @@ input {
 }
 
 .btn-login:hover {
-  background-color: #a0d8e0;
+  background-color: var(--clr-third-a30);
 }
 
 .divider {
@@ -88,7 +88,7 @@ input {
 }
 
 .btn-register {
-  background-color: white;
+  background-color: var(--clr-prymary-light);
   border: 1px solid #b2e4ea;
   padding: 12px;
   border-radius: 20px;
@@ -97,7 +97,7 @@ input {
 }
 
 .btn-register:hover {
-  background-color: #f0fafa;
+  background-color: var(--clr-third-a0);
 }
 
 .social-icons {

@@ -5,11 +5,12 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { Title } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent],
+  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

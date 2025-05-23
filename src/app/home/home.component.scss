@@ -24,8 +24,8 @@ position: relative;
   font-size: 1rem;   
 }
 .IconoHospitalesDisponibles{
-    background-color: white;
-  color: black;
+    background-color:  var(--clr-primary-light);
+  color: var(--clr-primary-a140);
   border: none;
   padding: 12px 30px;
   font-size: 16px;
@@ -65,7 +65,7 @@ position: relative;
   display: flex;
  width: 380px;
   height: 335px;
-  background-color: #ffffff;
+  background-color: var(--clr-primary-light);
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
   margin-left: 101px;
   border-radius: 20px;
@@ -83,7 +83,7 @@ position: relative;
   display: flex;
  width: 380px;
   height: 335px;
-  background-color: #ffffff;
+  background-color: var(--clr-primary-light);
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
   margin-left: 50px;
   border-radius: 20px;
@@ -104,8 +104,9 @@ position: relative;
   {
   font-size: 20px;
   margin-bottom: 9px;
-  color: #C1C0B2;
-}
+  color: var(--clr-secundary-a30);
+  }
+
   .TextoComentariosDeLaPagina h4
   {
   font-size: 15px;

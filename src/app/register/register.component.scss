@@ -63,15 +63,15 @@ input {
   border-radius: 20px;
   background-color: white;
   border: 1px solid #00bcd4;
-  color: black;
+  color: var(--clr-primary-a140);
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .boton-siguiente:hover {
-  background-color: #00bcd4;
-  color: white;
+  background-color: var(--clr-primary-a0);
+  color: var(--clr-primary-light);
 }
 
 .paginacion {
@@ -89,5 +89,5 @@ input {
 }
 
 .paginacion .activo {
-  background-color: #00bcd4;
+  background-color: var(--clr-primary-a0);
 }
