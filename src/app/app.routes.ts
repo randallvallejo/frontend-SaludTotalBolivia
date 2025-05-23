@@ -3,6 +3,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ConsultasComponent } from './consultas/consultas.component';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
 
 export const routes: Routes = [
     {path: 'home',component:HomeComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'search',component:HomeComponent },
     {path: 'login',component:LoginComponent },
     {path: 'register',component:RegisterComponent },
-    {path: '',redirectTo:'home',pathMatch:'full'}
+    {path: '',redirectTo:'home',pathMatch:'full'},
+    {path: 'notificaciones',component:NotificacionesComponent}
 ];
