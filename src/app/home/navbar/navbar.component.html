@@ -19,9 +19,11 @@
         <button class="boton-perfil">
           <img src="Icons/IconoPerfil.svg" class="IconoHeader">
         </button>
-        <button class="boton-notificacion">
-          <img src="Icons/IconoNotificacion.svg" class="IconoHeader" />
-        </button>
+ <button class="boton-notificacion"
+        [routerLink]="['/notificaciones']"routerLinkActive="active"(click)="setTitle('Notificaciones')">
+  <img src="Icons/IconoNotificacion.svg" class="IconoHeader" alt="Notificaciones" />
+</button>
+
       </div>
     </div>
   </header>
