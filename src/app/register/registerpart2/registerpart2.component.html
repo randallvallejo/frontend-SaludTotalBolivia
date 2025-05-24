@@ -1,0 +1,117 @@
+<section class="registro2-page" [formGroup]="formGroup">
+  <div class="imagen-panel">
+    <img src="Img/ImagenRegis.png" alt="Fondo registro" />
+  </div>
+
+  <div class="form-panel">
+    <h1>REGISTRO</h1>
+    <h3>Datos personales</h3>
+
+    <div class="formulario-registro">
+      <div class="field-group">
+        <label for="name">Nombres</label>
+        <input
+          id="name"
+          type="text"
+          formControlName="name"
+          [class.is-invalid]="formGroup.get('name')?.invalid && formGroup.get('name')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('name')?.invalid && formGroup.get('name')?.touched">
+          Nombre es requerido.
+        </span>
+      </div>
+      <div class="field-group">
+        <label for="lastName">Apellidos</label>
+        <input
+          id="lastName"
+          type="text"
+          formControlName="lastName"
+          [class.is-invalid]="formGroup.get('lastName')?.invalid && formGroup.get('lastName')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('lastName')?.invalid && formGroup.get('lastName')?.touched">
+          Apellido es requerido.
+        </span>
+      </div>
+
+      <div class="field-group">
+        <label for="ci">Carnet de identidad</label>
+        <input
+          id="ci"
+          type="text"
+          formControlName="ci"
+          [class.is-invalid]="formGroup.get('ci')?.invalid && formGroup.get('ci')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('ci')?.invalid && formGroup.get('ci')?.touched">
+          Carnet de identidad es requerido.
+        </span>
+      </div>
+
+      <div class="field-group">
+        <label for="birthDate">Fecha de nacimiento</label>
+        <input
+          id="birthDate"
+          type="date"
+          formControlName="birthDate"
+          [class.is-invalid]="formGroup.get('birthDate')?.invalid && formGroup.get('birthDate')?.touched"
+        />
+        <div class="error-message" *ngIf="formGroup.get('birthDate')?.hasError('required') && formGroup.get('birthDate')?.touched">
+          Fecha de nacimiento es requerida.
+        </div>
+        <div class="error-message" *ngIf="formGroup.get('birthDate')?.hasError('futureDate') && formGroup.get('birthDate')?.touched">
+          La fecha de nacimiento no puede ser en el futuro.
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label for="phone">Número de celular</label>
+        <input
+          id="phone"
+          type="tel"
+          formControlName="phone"
+          [class.is-invalid]="formGroup.get('phone')?.invalid && formGroup.get('phone')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('phone')?.invalid && formGroup.get('phone')?.touched">
+          Número de celular es requerido.
+        </span>
+      </div>
+      <div class="field-group">
+        <label for="bloodType">Tipo de Sangre</label>
+        <select name="bloodType" id="bloodType" formControlName="bloodType"
+                [class.is-invalid]="formGroup.get('bloodType')?.invalid && formGroup.get('bloodType')?.touched">
+          <option value="">Seleccione</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+        <span class="error-message" *ngIf="formGroup.get('bloodType')?.invalid && formGroup.get('bloodType')?.touched">
+          Tipo de sangre es requerido.
+        </span>
+      </div>
+      <div class="field-group">
+        <label for="photo">Subir foto</label>
+        <input
+          id="photo"
+          type="file"
+          formControlName="photo"
+        />
+      </div>
+      <button (click)="onPrev()" class="btn-anterior">
+          <span>Anterior</span>
+      </button>
+      <button (click)="onNext()" class="btn-siguiente">
+        <span>Siguiente</span>
+      </button>
+    </div>
+
+    <div class="paginacion">
+      <span></span>
+      <span class="activo"></span>
+      <span></span>
+    </div>
+  </div>
+</section>
