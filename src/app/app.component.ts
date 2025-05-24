@@ -7,11 +7,13 @@ import { RegisterComponent } from './register/register.component';
 import { Title } from '@angular/platform-browser';
 import { register } from 'module';
 import { Reserva1Component } from './reserva1/reserva1.component';
+import { ConsultasComponent } from './consultas/consultas.component';
+import { ReservarFechaComponent } from './reservar-fecha/reservar-fecha.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent, Reserva1Component
+  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,ConsultasComponent, Reserva1Component, ReservarFechaComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
