@@ -7,11 +7,12 @@ import { RegisterComponent } from './register/register.component';
 import { Register2Component } from './register2/register2.component';
 import { Title } from '@angular/platform-browser';
 import { register } from 'module';
+import { Reserva1Component } from './reserva1/reserva1.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,Register2Component
+  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent, Reserva1Component
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
