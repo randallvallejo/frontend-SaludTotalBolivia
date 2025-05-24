@@ -1,0 +1,109 @@
+/* Imagen de la sección consultas */
+.imagen-consultorio {
+  width: 100%;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.consultorio-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Centrado general y estilo del contenedor */
+
+:host {
+  display: block;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Introducción */
+.intro {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  margin: 50px;
+  color: #555;
+}
+
+/* Cada paso */
+.step {
+  margin-bottom: 40px;
+    margin: 50px;
+
+}
+
+.step h2 {
+  font-size: 1.5em;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+/*consultas comunes */
+.ConsultasComunes {
+  padding: 40px;
+  margin-top: 200px;
+}
+
+.ConsultasContenido {
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.ConsultasTexto {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.ConsultasTexto h2 {
+  font-size: 55px;
+  margin-bottom: 8px;
+}
+
+.ConsultasTexto h3 {
+  font-size: 20px;
+  margin-bottom: 35px;
+  color: #464646;
+}
+
+.botonConsultasComunes {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #B7B7F1;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px; /* o déjalo si quieres redondeo */
+  cursor: pointer;
+}
+
+.ImagenesConsultasComunes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+  margin-left: 300px;
+}
+
+.ImagenesConsultasComunes img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}

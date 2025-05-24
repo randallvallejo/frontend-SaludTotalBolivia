@@ -1,0 +1,67 @@
+<section class="registro3-page" [formGroup]="formGroup">
+  <div class="imagen-panel">
+    <img src="Img/ImagenRegis.png" alt="Fondo registro" />
+  </div>
+
+  <div class="form-panel">
+    <h1>REGISTRO</h1>
+    <h3>Dirección</h3>
+
+    <div class="formulario-registro">
+      <div class="field-group">
+        <label for="department">Departamento</label>
+        <input
+          id="department"
+          type="text"
+          formControlName="department"
+          [class.is-invalid]="formGroup.get('department')?.invalid && formGroup.get('department')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('department')?.invalid && formGroup.get('department')?.touched">
+          Departamento es requerido.
+        </span>
+      </div>
+
+      <div class="field-group">
+        <label for="province">Provincia</label>
+        <input
+          id="province"
+          type="text"
+          formControlName="province"
+          [class.is-invalid]="formGroup.get('province')?.invalid && formGroup.get('province')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('province')?.invalid && formGroup.get('province')?.touched">
+          Provincia es requerida.
+        </span>
+      </div>
+
+      <div class="field-group">
+        <label for="street">Calle</label>
+        <input
+          id="street"
+          type="text"
+          formControlName="street"
+          [class.is-invalid]="formGroup.get('street')?.invalid && formGroup.get('street')?.touched"
+        />
+        <span class="error-message" *ngIf="formGroup.get('street')?.invalid && formGroup.get('street')?.touched">
+          Calle es requerida.
+        </span>
+      </div>
+      <button (click)="onPrev()" class="btn-anterior">
+        <span>Anterior</span>
+      </button>
+      <button
+          type="submit" class="btn-siguiente" [disabled]="formGroup.invalid"
+          (click)="onSubmitPart3()" >
+          <span>Registrarse</span>
+        </button>
+    </div>
+
+    <div class="paginacion">
+      <span></span>
+      <span></span>
+      <span class="activo"></span>
+    </div>
+  </div>
+</section>
+
+  
