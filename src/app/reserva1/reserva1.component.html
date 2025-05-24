@@ -1,0 +1,54 @@
+<!-- Sección principal de la recepción -->
+<img src="Img/reservaFondo.png" alt="Fondo" />
+<!--confirmacion de reserva-->
+<div class="contenedor">
+  <h2>Confirmacion de reserva:</h2>
+  
+  <div class="tarjeta">
+    <h3>Cristhian Adrian Claros Vasquez</h3>
+
+    <div class="etiquetas">
+      <span class="etiqueta">Hospital Vietnam</span>
+      <span class="etiqueta">Consulta general</span>
+      <span class="etiqueta">Analisis de sangre</span>
+    </div>
+
+    <div class="fila">
+      <div class="campo">
+        <label>Doctor:</label>
+        <input type="text" value="Dr. Vallejo Randall" readonly />
+      </div>
+
+      <div class="campo">
+        <label>Fecha de reserva:</label>
+        <input type="text" value="25 de Mayo" readonly />
+      </div>
+
+      <div class="campo">
+        <label>Hora de reserva:</label>
+        <input type="text" value="18:00pm" readonly />
+      </div>
+    </div>
+
+    <div class="descripcion">
+      <label>Descripcion:</label>
+      <textarea readonly rows="5">
+Hola, soy Cristhian Claros Vasquez, tengo 34 años y quiero agendar una consulta general porque desde hace unos días me siento muy cansado sin razón aparente. He tenido mareos leves, dolores de cabeza frecuentes y dificultad para concentrarme. No tengo enfermedades crónicas, pero en mi familia hay antecedentes de diabetes e hipertensión.
+
+También quiero hacerme un análisis de sangre completo para revisar mis niveles de glucosa, colesterol y descartar anemia o alguna infección. Me gustaría saber si todo está bien o si necesito algún tratamiento. Agradezco mucho su atención.
+      </textarea>
+    </div>
+  </div>
+
+  <div class="centrado">
+    <button class="btn" routerLink="/reservarFecha">Confirmar reserva</button>
+  </div>
+
+  <div class="paginacion">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot active"></span>
+  </div>
+</div>
+
+
