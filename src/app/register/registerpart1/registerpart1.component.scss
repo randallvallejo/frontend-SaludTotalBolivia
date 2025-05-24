@@ -1,0 +1,146 @@
+.registro-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+
+  .imagen-fondo {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .formulario {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .formulario-registro {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        &.is-invalid {
+          border-color: #ff5252;
+        }
+      }
+
+      .password-input-wrapper {
+        position: relative;
+        margin-bottom: 10px;
+
+        input {
+          padding-right: 40px; // Make space for the button/image
+          margin-bottom: 0;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        .toggle-password {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+          display: flex; // To center the image if needed
+          align-items: center;
+          justify-content: center;
+
+          &:focus {
+            outline: none;
+          }
+
+          .toggle-icon {
+            background-color: rgba($color: #ffffff, $alpha: 0.001);
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .error-message {
+        color: #ff5252;
+        font-size: 0.85rem;
+        margin-top: -8px;
+        margin-bottom: 10px;
+      }
+
+      .enlace-login {
+        text-align: right;
+        font-size: 12px;
+        margin-bottom: 20px;
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+
+      .boton-siguiente {
+        padding: 10px 0;
+        border-radius: 20px;
+        background-color: white;
+        border: 1px solid #00bcd4;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+
+        &:hover:not(:disabled) {
+          background-color: #00bcd4;
+          color: white;
+        }
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .paginacion {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+
+        &.activo {
+          background-color: #00bcd4;
+        }
+      }
+    }
+  }
+}
