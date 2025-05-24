@@ -1,0 +1,160 @@
+/* Elimina espacios predeterminados */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+/* Imagen sin espacio */
+.imagen-fondo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.reserva-container {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Títulos */
+h2, h3 {
+  margin: 0 0 1rem 0;
+}
+
+/* Contenedor de botones arriba */
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  backdrop-filter: blur(5px);
+}
+
+/* Botones */
+.opcion,
+.listo {
+  background-color: #e0e7ff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.opcion:hover,
+.listo:hover {
+  background-color: #cbd5ff;
+}
+
+.listo {
+  background-color: #c7bfff;
+  font-weight: bold;
+}
+
+/* Fila de información */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Caja de información */
+.info-box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Etiquetas */
+.label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Horas disponibles */
+.horas-disponibles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.horas-disponibles div {
+  background-color: #f0f3ff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Recordatorio */
+.recordatorio {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Motivo */
+.motivo {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor del botón */
+.boton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Botón */
+.btn {
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* Pasos */
+.steps {
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #5d5dfc;
+}
+
+
+
