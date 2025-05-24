@@ -9,11 +9,12 @@ import { register } from 'module';
 import { Reserva1Component } from './reserva1/reserva1.component';
 import { ConsultasComponent } from './consultas/consultas.component';
 import { ReservarFechaComponent } from './reservar-fecha/reservar-fecha.component';
+import { ReservaSeleccionComponent } from './reserva-seleccion/reserva-seleccion.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,ConsultasComponent, Reserva1Component, ReservarFechaComponent
+  imports: [RouterOutlet,NavbarComponent,HomeComponent, LoginComponent,RegisterComponent,ConsultasComponent, Reserva1Component, ReservarFechaComponent, ReservaSeleccionComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -1,0 +1,40 @@
+.contenedor-analisis {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contenedor-analisis h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.grid-analisis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.analisis {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: #fffefb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.analisis:hover {
+  background-color: #f9f9f7;
+}
+
+.seleccionado {
+  background-color: #fdfcee; /* color crema claro */
+  font-weight: 600;
+}

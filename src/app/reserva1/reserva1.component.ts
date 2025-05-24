@@ -6,7 +6,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-reserva1',
-  imports: [NavbarComponent,RouterOutlet, RouterLink],
+  imports: [NavbarComponent, RouterOutlet, RouterLink],
   templateUrl: './reserva1.component.html',
   styleUrl: './reserva1.component.scss'
 })

@@ -6,6 +6,7 @@ import { RegisterComponent }        from './register/register.component';
 import { ConsultasComponent }       from './consultas/consultas.component';
 import { Reserva1Component } from './reserva1/reserva1.component';
 import { ReservarFechaComponent } from './reservar-fecha/reservar-fecha.component';
+import { ReservaSeleccionComponent } from './reserva-seleccion/reserva-seleccion.component';
 
 export const routes: Routes = [
   { path: 'home',        component: HomeComponent },
@@ -15,7 +16,8 @@ export const routes: Routes = [
   { path: 'search',      component: HomeComponent },
   { path: 'login',       component: LoginComponent },
   { path: 'register',    component: RegisterComponent },    
-  { path: 'reserva1', component: Reserva1Component },  
+  { path: 'reservaSeleccion', component: ReservaSeleccionComponent },  
   { path: 'reservarFecha', component: ReservarFechaComponent },
+  {path:'reserva1', component: Reserva1Component},
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

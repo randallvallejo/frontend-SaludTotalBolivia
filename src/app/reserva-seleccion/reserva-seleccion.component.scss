@@ -1,0 +1,66 @@
+/* Elimina espacios predeterminados */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+/* Imagen sin espacio */
+.imagen-fondo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/*boton listo*/
+.btn {
+  background-color: rgb(68, 130, 171);
+  border: 1px solid #aaaaff;
+  border-radius: 20px;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+/* Contenedor principal */
+.reserva-container {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Contenedor de botones arriba */
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  backdrop-filter: blur(5px);
+}
+
+/* Botones */
+.opcion,
+.listo {
+  background-color: #e0e7ff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.opcion:hover,
+.listo:hover {
+  background-color: #cbd5ff;
+}
