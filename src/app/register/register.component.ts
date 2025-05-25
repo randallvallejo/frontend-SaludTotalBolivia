@@ -7,8 +7,7 @@ import {
 } from '@angular/forms';
 import { Registerpart1Component } from './registerpart1/registerpart1.component';
 import { Registerpart2Component } from './registerpart2/registerpart2.component';
-import { Registerpart3Component } from './registerpart3/registerpart3.component'; // Import Registerpart3Component
-
+import { Registerpart3Component } from './registerpart3/registerpart3.component';
 @Component({
   selector: 'app-register',
   standalone: true,
@@ -18,7 +17,7 @@ import { Registerpart3Component } from './registerpart3/registerpart3.component'
     CommonModule,
     FormsModule,
     Registerpart2Component,
-    Registerpart3Component, // Add Registerpart3Component here
+    Registerpart3Component,
     ReactiveFormsModule
   ],
   templateUrl: './register.component.html',
