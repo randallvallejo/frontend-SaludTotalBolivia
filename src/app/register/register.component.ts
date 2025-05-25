@@ -8,6 +8,10 @@ import {
 import { Registerpart1Component } from './registerpart1/registerpart1.component';
 import { Registerpart2Component } from './registerpart2/registerpart2.component';
 import { Registerpart3Component } from './registerpart3/registerpart3.component';
+import { ApiClientService } from '../services/api-client.service';
+import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-register',
   standalone: true,
@@ -28,7 +32,9 @@ export class RegisterComponent implements OnInit {
   mainForm: FormGroup;
   formData: any = {};
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private apiClientService: ApiClientService,
+    private titleService: Title, private route: Router
+  ) {
     this.mainForm = this.fb.group({
       step1: this.fb.group({
         userName: ['', Validators.required],
@@ -39,7 +45,7 @@ export class RegisterComponent implements OnInit {
       step2: this.fb.group({
         name: ['', Validators.required],
         lastName: ['', Validators.required],
-        ci: ['', Validators.required],
+        ci: [0, Validators.required],
         birthDate: ['', Validators.required],
         phone: ['', Validators.required],
         bloodType: ['', Validators.required],
@@ -53,7 +59,9 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.titleService.setTitle('Registro');
+  }
 
   private passwordMatchValidator(g: FormGroup) {
     return g.get('password')?.value === g.get('confirmPassword')?.value
@@ -85,12 +93,11 @@ export class RegisterComponent implements OnInit {
   prevStep() {
     this.currentStep = Math.max(1, this.currentStep - 1);
   }
-
   onSubmit() {
     if (this.mainForm.valid) {
       this.formData = this.mainForm.value;
       let finalData = {
-        userCi: this.formData.step1.ci,
+        userCi:Number(this.formData.step2.ci),
         userEmail: this.formData.step1.email,
         userName: this.formData.step1.userName,
         userPassword: this.formData.step1.password,
@@ -103,6 +110,17 @@ export class RegisterComponent implements OnInit {
         province: this.formData.step3.province,
         street: this.formData.step3.street
       }
+      console.log(this.formData);
+      console.log('Datos del formulario:', finalData);
+      this.apiClientService.post('users/register', finalData).subscribe(
+        (response) => {
+          console.log('Respuesta del servidor:', response);
+        },
+        (error) => {
+          console.error('Error en la solicitud:', error);
+        }
+      );
+      this.route.navigate(['/login']);
     }
   }
 
