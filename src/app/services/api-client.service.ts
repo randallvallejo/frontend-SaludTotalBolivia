@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ApiClientService {
-  private baseUrl = environment.API_BASE_URL;
+private baseUrl = environment.apiUrl;
   constructor(private http: HttpClient) { }
 
   get(url: string): Observable<any> {
