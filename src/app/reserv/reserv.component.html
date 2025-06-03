@@ -1,0 +1,63 @@
+
+<main>
+  <h3 class="title">Departamentos</h3>
+  <div class="opciones">
+    @for (departamento of departamentos; track departamento) {
+      <button class="opcion" (click)="getInstitutionsByDepartment(departamento)">
+        {{ departamento }}
+      </button>
+    }@empty {
+      <div class="card">
+        <h4>No hay departamentos disponibles</h4>
+      </div>
+    }
+  </div>
+  @if(showInstitutions){
+    <h3 class="title">Instituciones de {{appointmentData.department}}</h3>
+    <div id="healt-institutions" class="grid">
+      @for (institution of institutions; track institution.uuid) {
+          <app-institution [institution]="institution" (institutionSelected)="nextStep(institution)"></app-institution>
+      }@empty{
+        <div class="card">
+          <h4>No hay instituciones disponibles</h4>
+        </div>
+      }
+    </div>
+  }
+  @if(showSpecialities){
+    <h3 class="title">Especialidades de {{appointmentData.institutionName}}</h3>
+    <div id="specialities" class="grid">
+      @for (specialty of specialities; track specialty.name) {
+          <app-specialty [specialty]="specialty" (onSpecialtySelected)="nextStep2(specialty)"></app-specialty>
+      }@empty {
+        <div class="card">
+          <h4>No hay especialidades disponibles</h4>
+        </div>
+      }
+    </div>
+  }
+  @if(showDoctors){
+    <h3 class="title">Doctores de {{appointmentData.specialty}}</h3>
+    <div id="doctors" class="grid">
+      @for (doctor of doctors; track doctor.ci) {
+          <app-doctor [doctor]="doctor" (onDoctorSelected)="nextStep3(doctor)"></app-doctor>
+      }@empty {
+        <div class="card">
+          <h4>No hay doctores disponibles</h4>
+        </div>
+      }
+    </div>
+  }
+  @if(showSchedules){
+    <h3 class="title">Horarios disponibles</h3>
+    <div id="schedules" class="grid">
+      @for (schedule of schedules; track schedule.id) {
+          <app-schedule [scheduleData]="schedule" (onScheduleSelected)="nextStep4(schedule)"></app-schedule>
+      }@empty {
+        <div class="card">
+          <h4>No hay horarios disponibles</h4>
+        </div>
+      }
+    </div>
+  }
+</main>

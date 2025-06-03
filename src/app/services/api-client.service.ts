@@ -26,4 +26,7 @@ export class ApiClientService {
   delete(url: string): Observable<any> {
     return this.http.delete(`${this.baseUrl}/${url}`);
   }
+  request(method: string, url: string, data?: any): Observable<any> {
+    return this.http.request(method, `${this.baseUrl}/${url}`, { body: data });
+  }
 }
