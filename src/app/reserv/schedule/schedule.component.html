@@ -1,0 +1,12 @@
+<button (click)="selectSchedule()" class="card">
+    <div class="card-header">
+        <h5>Turno: {{scheduleData?.shift}}</h5>
+    </div>
+    <div class="card-body">
+        <h3> De: </h3>
+        <h4>{{scheduleData?.startTime}} --{{scheduleData?.endTime}}</h4>
+    </div>
+    <div class="card-footer">
+        <small>{{scheduleData?.shiftDate}}</small>
+    </div>
+</button>

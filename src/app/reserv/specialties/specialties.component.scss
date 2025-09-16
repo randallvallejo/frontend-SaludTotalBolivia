@@ -1,0 +1,27 @@
+.card {
+  background-color: #f9f8ff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--clr-primary-a0);
+  }
+  h4{
+    font-weight: bold;
+    text-align: left;
+  }
+  .address{
+    display: flex;
+    justify-content: space-between;
+    small{
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: red;
+    }
+  }
+}

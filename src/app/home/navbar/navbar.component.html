@@ -4,7 +4,7 @@
         <img src="Img/logo.svg" class="logo">
         <nav class="barra-navegacion">
           <a [routerLink]="['/home']" [routerLinkActive]="['active','selected']" (click)="setTitle('Home')">Inicio</a>
-          <a [routerLink]="['/reservaSeleccion']" href="#"[routerLinkActive]="['active']"(click)="setTitle('reservaSeleccion')">Reservar</a>
+          <a [routerLink]="['/reservar']" href="#"[routerLinkActive]="['active']"(click)="setTitle('Resservar')">Reservar</a>
           <a [routerLink]="['/consultas']" href="#"[routerLinkActive]="['active']"(click)="setTitle('Consultas')">Consultas</a>
           <a [routerLink]="['/about-us']" href="#"[routerLinkActive]="['active']"(click)="setTitle('About us')">Sobre nosotros</a>
           <a [routerLink]="['/search']" href="#"[routerLinkActive]="['active']"(click)="setTitle('Search')">Buscar</a>
@@ -13,9 +13,18 @@
 
       <!-- Botones del lado derecho -->
       <div class="grupo-derecho">
-        <button  class="boton-Iniciar-Sesion" [routerLink]="['/login']" (click)="setTitle('Login')">
-          Iniciar sesion
-        </button>
+        @if (isLogged) {
+          <button  class="boton-Iniciar-Sesion" [routerLink]="['/login']" (click)="logout()">
+            cerrar sesion
+          </button>
+          @if ( loggedUser.userRoles.includes('Patient')){
+            <button> Paciente </button>
+          }
+        }@else{
+          <button  class="boton-Iniciar-Sesion" [routerLink]="['/login']" (click)="setTitle('Login')">
+            Iniciar sesion
+          </button>
+        }
         <button class="boton-perfil">
           <img src="Icons/IconoPerfil.svg" class="IconoHeader">
         </button>

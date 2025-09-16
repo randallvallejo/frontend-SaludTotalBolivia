@@ -1,0 +1,103 @@
+/* Elimina espacios predeterminados */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+/*boton listo*/
+.btn {
+  background-color: rgb(68, 130, 171);
+  border: 1px solid #aaaaff;
+  border-radius: 20px;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+/* Contenedor principal */
+.reserva-container {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Contenedor de botones arriba */
+
+
+/* Botones */
+.opcion,
+.listo {
+  background-color: #e0e7ff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.opcion:hover,
+.listo:hover {
+  background-color: #cbd5ff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.dnone{
+  display: none;
+}
+main{
+  background-image: url('../../../public/Img/reservaFondo.png');
+  background-size: cover;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  .title{
+    flex:1 1 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  .opciones {
+    flex:1 1 100%;
+    display: flex;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    backdrop-filter: blur(5px);
+  }
+  .grid {
+    flex:1 1 100%;
+    display: flex;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    backdrop-filter: blur(5px);
+  }
+}
